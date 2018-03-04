@@ -41,7 +41,6 @@ export default {
   methods: {
     onPageButton(page) {
       this.page = page;
-      console.log(this.page);
     }
   }
 }
