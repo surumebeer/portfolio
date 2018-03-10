@@ -1,16 +1,32 @@
 <template>
   <div class="page-wrap">
-    <ul>
-      <li @click="onPageButton('introduce')">introduce</li>
-      <li><a href="https://github.com/nishinoshuji" target="_blank">github</a></li>
-      <li><a href="http://sayonarbuncho.hatenablog.com/" target="_blank">blog</a></li>
-      <li><a href="https://qiita.com/surumebeer" target="_blank">qiita</a></li>
-      <li @click="onPageButton('portfolio')">portfolio</li>
-    </ul>
-    <div v-if="isIntroduce" class="right-column">
+    <div class="header">
+      <div class="menu">
+        <h1>Nishino Shuji</h1>
+        <ul>
+          <li>
+            <p @click="onPageButton('introduce')">profile</p>
+          </li>
+          <li>
+            <p @click="onPageButton('portfolio')">portfolio</p>
+          </li>
+          </li>
+          <li>
+            <a href="https://github.com/nishinoshuji" target="_blank">github</a>
+          </li>
+          <li>
+            <a href="http://sayonarbuncho.hatenablog.com/" target="_blank">blog</a>
+          </li>
+          <!--<li>
+            <a href="https://qiita.com/surumebeer" target="_blank">qiita</a>
+          </li>-->
+        </ul>
+      </div>
+    </div>
+    <div v-if="isIntroduce" class="content">
       <Introduce />
     </div>
-    <div v-if="isPortfolio" class="right-column">
+    <div v-if="isPortfolio" class="content">
       <Portfolio />
     </div>
   </div>
@@ -53,16 +69,33 @@ export default {
 
 <style lang="scss" scoped>
 .page-wrap {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-gap: 1px;
-  height: 100vh;
-  background: #000;
+  padding: 120px 100px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: #fff;
+}
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 0 100px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+h1 {
+  padding: 0 10px;
+  font-weight: bold;
 }
 ul {
-  display: grid;
-  grid-gap: 1px;
-  grid-template-rows: repeat(5, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0 0;
 }
 li {
   position: relative;
@@ -70,30 +103,24 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 10px;
 
   &:hover {
-    color: #fff;
-    background: #aaa;
+    text-decoration: underline;
+  }
+  p {
+    cursor: pointer;
   }
 }
 a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #000;
   text-decoration: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
 
   &:hover {
-    color: #fff;
+    text-decoration: underline;
   }
 }
-.right-column {
-  padding: 10px;
+.content {
+  padding: 20px 10px;
   background: #fff;
 }
 </style>
