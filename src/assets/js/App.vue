@@ -12,7 +12,7 @@
           </li>
           </li>
           <li>
-            <a href="https://github.com/nishinoshuji" target="_blank">github</a>
+            <a href="https://github.com/surumebeer" target="_blank">github</a>
           </li>
           <li>
             <a href="http://sayonarbuncho.hatenablog.com/" target="_blank">blog</a>

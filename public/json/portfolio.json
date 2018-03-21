@@ -3,26 +3,26 @@
     {
       "name": "vue-task-manage",
       "url": "https://vue-task-manage.firebaseapp.com/",
-      "github": "https://github.com/nishinoshuji/vue-task-manage"
+      "github": "https://github.com/surumebeer/vue-task-manage"
     },
     {
       "name": "react-firebase-chat",
       "url": "https://react-firebase-chat-70fd0.firebaseapp.com/",
-      "github": "https://github.com/nishinoshuji/react-firebase-chat"
+      "github": "https://github.com/surumebeer/react-firebase-chat"
     },
     {
       "name": "react-markdown-viewer",
       "url": "https://react-markdown-viewer.firebaseapp.com/",
-      "github": "https://github.com/nishinoshuji/react-markdown-viewer"
+      "github": "https://github.com/surumebeer/react-markdown-viewer"
     },
     {
       "name": "portfolio(this)",
       "url": "https://surumebeer-f6a74.firebaseapp.com/",
-      "github": "https://github.com/nishinoshuji/portfolio"
+      "github": "https://github.com/surumebeer/portfolio"
     },
     {
       "name": "nodejs-env-test",
-      "github": "https://github.com/nishinoshuji/nodejs-env-test"
+      "github": "https://github.com/surumebeer/nodejs-env-test"
     }
   ]
 }
