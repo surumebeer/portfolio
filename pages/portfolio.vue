@@ -29,15 +29,15 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped lang="scss">
 li {
-  display: table;
+  display: flex;
+  align-items: center;
   width: 100%;
   line-height: 1.5;
 
   a,
   p {
-    display: table-cell;
     width: 50%;
   }
 }
