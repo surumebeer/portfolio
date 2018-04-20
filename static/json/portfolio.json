@@ -1,6 +1,11 @@
 {
   "list":[
     {
+      "name": "study-task-manage",
+      "url": "https://study-task-manage.firebaseapp.com/",
+      "github": "https://github.com/surumebeer/study-task-manage"
+    },
+    {
       "name": "vue-task-manage",
       "url": "https://vue-task-manage.firebaseapp.com/",
       "github": "https://github.com/surumebeer/vue-task-manage"
