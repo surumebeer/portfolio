@@ -1,0 +1,16 @@
+.icons {
+  margin: 0 auto;
+  display: inline-block;
+  ul {
+    display: flex;
+    li {
+      padding: 0 10px;
+      position: relative;
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
