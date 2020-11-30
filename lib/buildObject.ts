@@ -13,7 +13,7 @@ export const buildObject = {
         ]
       },
       artifacts: {
-        baseDirectory: 'src/out',
+        baseDirectory: 'out',
         files: '**/*'
       },
       cache: {
