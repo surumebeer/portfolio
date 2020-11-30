@@ -11,14 +11,14 @@ export const buildObject = {
         commands: [
           'cd src && npm run build'
         ]
-      },
-      artifacts: {
-        baseDirectory: 'out',
-        files: '**/*'
-      },
-      cache: {
-        path: 'src/node_modules/**/*'
       }
+    },
+    artifacts: {
+      baseDirectory: 'src/out',
+      files: '**/*'
+    },
+    cache: {
+      path: 'src/node_modules/**/*'
     }
   }
 }
